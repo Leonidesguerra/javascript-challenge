@@ -61,7 +61,7 @@ function runEnter(){
     let inputValue=inputElement.property("value");
     
     //console.log(inputValue);
-
+    let filterSitings={};
     //filtering
     if (selection === "datetime"){
         filterSitings = ufoSitings.filter((siting)=> {
@@ -87,10 +87,6 @@ function runEnter(){
         })
     }  
 
-
-
-    
-
     let tbody= d3.select("tbody");
     tbody.html("");
     filterSitings.forEach((siting)=>{
@@ -103,8 +99,6 @@ function runEnter(){
         newtr.append("td").text(`${siting.duration}`)
         newtr.append("td").text(`${siting.comments}`)
     })
-    
-
 
 }
 
