@@ -1,63 +1,23 @@
-# JavaScript Homework - JavaScript and DOM Manipulation
+### UFO Sistings - Java Script challenge
 
-## Background
+UFO sitings is a website which filters and displays information about UFO citings from a JASON type data file, which is filtered using the following tools. 
+ - HTML
+ - Bootstrap
+ - JavaScript
+ - CSS
+ - D3.js
 
-WAKE UP SHEEPLE! The extra-terrestrial menace has come to Earth and we here at `ALIENS-R-REAL` have collected all of the eye-witness reports we could to prove it! All we need to do now is put this information online for the world to see and then the matter will finally be put to rest.
 
-There is just one tiny problem though... our collection is too large to search through manually. Even our most dedicated followers are complaining that they are having trouble locating specific reports in this mess.
 
-That's why we are hiring you. We need you to write code that will create a table dynamically based upon a [dataset we provide](StarterCode/static/js/data.js). We also need to allow our users to filter the table data for specific values. There's a catch though... we only use pure JavaScript, HTML, and CSS, and D3.js on our web pages. They are the only coding languages which can be trusted.
+## Working process 
 
-You can handle this... right? The planet Earth needs to know what we have found!
+UFO- level 1
+  
+  For this process first I used d3 to select the users input from the form. Next I used event handlers in order to identify when the button was clicked or the data on the form had been changed. On the event that the button was clicked, the data was filtered acording to the date entered by the user. Finally the the filtered data was displayed on a table using d3 to fill the data into the table.
 
-## Your Task
 
-### Before You Begin
+UFO- level 2 (bonus)
 
-1. Create a new repository for this project called `javascript-challenge`. **Do not add this homework to an existing repository**.
+  For this process I completed the same proces as in level 1, just in this case I added a dropdown menu using bootstrap, where the user could choose between different filtering options. Once an option is selected, I used if function in order to filter acordingly. 
 
-2. Clone the new repository to your computer.
-
-3. Inside your local git repository, create a directory for the Javascript challenge. Use the folder names to correspond to the challenges: **UFO-level-1** and **UFO-level-2**.
-
-4. Add your **html** files to this folder as well as your static folder containing your javascript. This will be the main script to run for analysis.
-
-5. Push the above changes to GitHub or GitLab.
-
-6. Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file
-
-### Level 1: Automatic Table and Date Search (Required)
-
-* Create a basic HTML web page or use the [index.html](StarterCode/index.html) file provided (we recommend building your own custom page!).
-
-* Using the UFO dataset provided in the form of an array of JavaScript objects, write code that appends a table to your web page and then adds new rows of data for each UFO sighting.
-
-  * Make sure you have a column for `date/time`, `city`, `state`, `country`, `shape`, and `comment` at the very least.
-
-* Use a date form in your HTML document and write JavaScript code that will listen for events and search through the `date/time` column to find rows that match user input.
-
-### Level 2: Multiple Search Categories (Optional)
-
-* Complete all of Level 1 criteria.
-
-* Using multiple `input` tags and/or select dropdowns, write JavaScript code so the user can to set multiple filters and search for UFO sightings using the following criteria based on the table columns:
-
-  1. `date/time`
-  2. `city`
-  3. `state`
-  4. `country`
-  5. `shape`
-
-- - -
-
-### Dataset
-
-* [UFO Sightings Data](StarterCode/static/js/data.js)
-
-- - -
-
-**Good luck!**
-
-- - -
-
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+In both levels I used CSS and Bootstrap to modify the site appearance.
